@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/nuevaDenuncia.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 
     <title>CICLO-DENUNCIA</title>
 
@@ -68,7 +68,7 @@
    <div class="container">
 		<p class="form-title">
                     NUEVA DENUNCIA</p>
-            <form role="form" id="NuevaDenuncia" action="miPerfil.html" name = "denu">
+            <form role="form" id="NuevaDenuncia" action="miPerfil.html" name = "denu" onsubmit="return validateDen()">
                 <div class="form-group">
                     <label class="control-label" for="Direccion">Direccion Infracción</label>
                     <input type="text" class="form-control" id="Direccion" name="Direccion" placeholder="Introduzca la dirección" required autofocus />
@@ -86,7 +86,7 @@
 		    		<textarea class="form-control" id="message" name="message" placeholder="Describa lo sucedido" rows="5"></textarea>
 		    	</div>
                 <div class="form-group">                
-                    <input type="submit" class="btn btn-primary" value="Registrar">
+                    <input type="submit" class="btn btn-primary" value="Tramitar">
                     <input type="reset" class="btn btn-default" value="Limpiar">                
                 </div>
                 <div id="respuesta" style="display: none;"></div>

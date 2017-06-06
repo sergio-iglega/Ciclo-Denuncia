@@ -77,6 +77,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 
     <title>CICLO-DENUNCIA</title>
 
@@ -133,7 +134,7 @@
         <div class="container">
 			<p class="form-title">
                     FORMULARIO DE CONTACTO</p>
-            <form role="form" id="Formulario" action="index.html" >
+            <form role="form" id="Formulario" action="index.html" onsubmit="return validateMen()">
                 <div class="form-group">
                     <label class="control-label" for="Nombre">Nombre y Apellidos</label>
                     <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre y apellidos" required autofocus />
